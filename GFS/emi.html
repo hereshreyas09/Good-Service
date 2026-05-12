@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =========================
+         META TAGS
+    ========================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Use the EMI Calculator by Good Service Finance Consultancy to calculate monthly loan EMI for Housing Loans, Personal Loans and Business Loans.">
+
+    <meta name="keywords"
+        content="EMI Calculator, Loan EMI Calculator, Home Loan EMI, Personal Loan EMI">
+
+    <meta name="author"
+        content="Good Service Finance Consultancy">
+
+    <!-- =========================
+         TITLE
+    ========================== -->
+
+    <title>
+
+        EMI Calculator |
+        Good Service Finance Consultancy
+
+    </title>
+
+    <!-- =========================
+         GOOGLE FONTS
+    ========================== -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- =========================
+         FONT AWESOME
+    ========================== -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- =========================
+         CSS FILES
+    ========================== -->
+
+    <link rel="stylesheet"
+        href="style.css">
+
+    <link rel="stylesheet"
+        href="animations.css">
+
+    <!-- =========================
+         FAVICON
+    ========================== -->
+
+    <link rel="icon"
+        href="images/favicon.ico"
+        type="image/x-icon">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         WHATSAPP BUTTON
+    ========================== -->
+
+    <a href="https://wa.me/917055025777"
+        target="_blank"
+        class="whatsapp-btn">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <nav>
+
+            <!-- LOGO -->
+
+            <div class="logo-wrap">
+
+                <img src="images/logo.png"
+                    alt="Good Service Finance Consultancy"
+                    class="logo">
+
+                <div class="logo-text">
+
+                    <h2>
+
+                        Good Service
+
+                    </h2>
+
+                    <p>
+
+                        Finance Consultancy
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- NAVIGATION -->
+
+            <div class="nav-links">
+
+                <a href="home.html">Home</a>
+
+                <a href="services.html">Services</a>
+
+                <a href="emi.html">EMI Calculator</a>
+
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content reveal">
+
+            <h1>
+
+                EMI Calculator
+
+            </h1>
+
+            <p>
+
+                Calculate your monthly EMI for Housing Loans,
+                Personal Loans and Business Loans instantly.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         EMI CALCULATOR
+    ========================== -->
+
+    <section class="calculator">
+
+        <h2 class="section-title reveal">
+
+            Calculate Your Loan EMI
+
+        </h2>
+
+        <div class="calculator-box reveal">
+
+            <!-- LOAN AMOUNT -->
+
+            <input type="number"
+                id="loanAmount"
+                placeholder="Enter Loan Amount">
+
+            <!-- INTEREST RATE -->
+
+            <input type="number"
+                id="interestRate"
+                placeholder="Interest Rate (%)">
+
+            <!-- LOAN TENURE -->
+
+            <input type="number"
+                id="loanMonths"
+                placeholder="Loan Tenure (Months)">
+
+            <!-- BUTTON -->
+
+            <button onclick="calculateEMI()">
+
+                Calculate EMI
+
+            </button>
+
+            <!-- RESULT -->
+
+            <div class="emi-result">
+
+                <h3 id="emiResult">
+
+                    Monthly EMI: ₹0
+
+                </h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         EMI BENEFITS
+    ========================== -->
+
+    <section class="services">
+
+        <h2 class="section-title reveal">
+
+            Why Use Our EMI Calculator
+
+        </h2>
+
+        <div class="service-grid">
+
+            <!-- CARD 1 -->
+
+            <div class="service-box reveal">
+
+                <i class="fa-solid fa-calculator"></i>
+
+                <h3>
+
+                    Instant Calculation
+
+                </h3>
+
+                <p>
+
+                    Quickly calculate your monthly EMI
+                    within seconds.
+
+                </p>
+
+            </div>
+
+            <!-- CARD 2 -->
+
+            <div class="service-box reveal">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <h3>
+
+                    Better Financial Planning
+
+                </h3>
+
+                <p>
+
+                    Plan your monthly budget
+                    before applying for loans.
+
+                </p>
+
+            </div>
+
+            <!-- CARD 3 -->
+
+            <div class="service-box reveal">
+
+                <i class="fa-solid fa-wallet"></i>
+
+                <h3>
+
+                    Easy To Use
+
+                </h3>
+
+                <p>
+
+                    Simple and user-friendly
+                    finance calculation tool.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         CONTACT SECTION
+    ========================== -->
+
+    <section class="contact">
+
+        <h2 class="section-title reveal">
+
+            Need Loan Assistance?
+
+        </h2>
+
+        <div class="contact-grid">
+
+            <!-- CONTACT BOX -->
+
+            <div class="contact-box reveal">
+
+                <h3>
+
+                    Contact Us
+
+                </h3>
+
+                <p>
+
+                    <strong>Phone:</strong>
+                    7055025777
+
+                </p>
+
+                <p>
+
+                    <strong>Email:</strong>
+                    gsfinanceconsultancy@gmail.com
+
+                </p>
+
+                <p>
+
+                    <strong>GSTIN:</strong>
+                    09AHOPC1052D1ZR
+
+                </p>
+
+                <!-- FORM -->
+
+                <form action="https://formsubmit.co/gsfinanceconsultancy@gmail.com"
+                    method="POST"
+                    class="inquiry-form">
+
+                    <input type="hidden"
+                        name="_captcha"
+                        value="false">
+
+                    <input type="hidden"
+                        name="_next"
+                        value="thankyou.html">
+
+                    <input type="text"
+                        name="name"
+                        placeholder="Full Name"
+                        required>
+
+                    <input type="email"
+                        name="email"
+                        placeholder="Email Address"
+                        required>
+
+                    <input type="tel"
+                        name="phone"
+                        placeholder="Phone Number"
+                        required>
+
+                    <textarea name="message"
+                        placeholder="Write Your Inquiry"
+                        required></textarea>
+
+                    <button type="submit">
+
+                        Submit Inquiry
+
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- MAP -->
+
+            <div class="map-box reveal">
+
+                <iframe src="https://maps.google.com/maps?q=Gwalior%20Road%20Agra&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    loading="lazy">
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <!-- ABOUT -->
+
+            <div>
+
+                <h3>
+
+                    Good Service Finance Consultancy
+
+                </h3>
+
+                <p>
+
+                    Trusted financial consultancy services in Agra.
+
+                </p>
+
+            </div>
+
+            <!-- QUICK LINKS -->
+
+            <div>
+
+                <h3>
+
+                    Quick Links
+
+                </h3>
+
+                <a href="privacy-policy.html">
+
+                    Privacy Policy
+
+                </a>
+
+                <a href="terms-and-conditions.html">
+
+                    Terms & Conditions
+
+                </a>
+
+                <a href="disclaimer.html">
+
+                    Disclaimer
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+
+        <p class="copyright">
+
+            © 2026 Good Service Finance Consultancy.
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <!-- =========================
+         SCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

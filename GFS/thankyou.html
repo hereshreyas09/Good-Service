@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =========================
+         META TAGS
+    ========================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Thank You Page - Good Service Finance Consultancy">
+
+    <!-- =========================
+         TITLE
+    ========================== -->
+
+    <title>
+
+        Thank You |
+        Good Service Finance Consultancy
+
+    </title>
+
+    <!-- =========================
+         GOOGLE FONT
+    ========================== -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- =========================
+         FONT AWESOME
+    ========================== -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- =========================
+         INTERNAL STYLE
+    ========================== -->
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            width:100%;
+            height:100vh;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            overflow:hidden;
+
+            background:
+            linear-gradient(
+                rgba(255,255,255,0.88),
+                rgba(255,255,255,0.88)
+            ),
+            url('images/background.png')
+            center/cover no-repeat;
+        }
+
+        .thankyou-card{
+
+            width:420px;
+
+            background:white;
+
+            border-radius:35px;
+
+            padding:50px 40px;
+
+            text-align:center;
+
+            box-shadow:
+            0 15px 40px rgba(0,0,0,0.12);
+
+            animation:
+            popup 0.8s ease;
+
+            position:relative;
+        }
+
+        .thankyou-icon{
+
+            width:95px;
+            height:95px;
+
+            margin:auto;
+
+            border-radius:50%;
+
+            background:
+            linear-gradient(
+                135deg,
+                #0066cc,
+                #0099ff
+            );
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            color:white;
+
+            font-size:42px;
+
+            margin-bottom:25px;
+
+            animation:float 2.5s infinite ease-in-out;
+        }
+
+        .thankyou-card h1{
+
+            color:#003b7a;
+
+            font-size:38px;
+
+            margin-bottom:15px;
+        }
+
+        .thankyou-card p{
+
+            color:#555;
+
+            line-height:1.8;
+
+            font-size:16px;
+        }
+
+        .redirect-text{
+
+            margin-top:25px;
+
+            font-size:14px;
+
+            color:#777;
+        }
+
+        @keyframes popup{
+
+            from{
+                opacity:0;
+                transform:scale(0.7);
+            }
+
+            to{
+                opacity:1;
+                transform:scale(1);
+            }
+
+        }
+
+        @keyframes float{
+
+            0%{
+                transform:translateY(0px);
+            }
+
+            50%{
+                transform:translateY(-10px);
+            }
+
+            100%{
+                transform:translateY(0px);
+            }
+
+        }
+
+        @media(max-width:500px){
+
+            .thankyou-card{
+
+                width:90%;
+                padding:40px 25px;
+
+            }
+
+            .thankyou-card h1{
+
+                font-size:30px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- =========================
+         THANK YOU CARD
+    ========================== -->
+
+    <div class="thankyou-card">
+
+        <!-- ICON -->
+
+        <div class="thankyou-icon">
+
+            <i class="fa-solid fa-check"></i>
+
+        </div>
+
+        <!-- HEADING -->
+
+        <h1>
+
+            Thank You!
+
+        </h1>
+
+        <!-- TEXT -->
+
+        <p>
+
+            Your inquiry has been submitted successfully.
+            Our team will contact you shortly.
+
+        </p>
+
+        <!-- REDIRECT TEXT -->
+
+        <div class="redirect-text">
+
+            Redirecting to Home Page...
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+         AUTO REDIRECT SCRIPT
+    ========================== -->
+
+    <script>
+
+        setTimeout(()=>{
+
+            window.location.href='home.html';
+
+        },3000);
+
+    </script>
+
+</body>
+
+</html>

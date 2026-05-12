@@ -1,0 +1,569 @@
+/* =========================
+   ANIMATIONS.CSS
+   Good Service Finance Consultancy
+========================= */
+
+/* =========================
+   GLOBAL TRANSITIONS
+========================= */
+
+*{
+    transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* =========================
+   FADE UP
+========================= */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(60px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* =========================
+   FADE DOWN
+========================= */
+
+@keyframes fadeDown{
+
+    from{
+        opacity:0;
+        transform:translateY(-60px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* =========================
+   FADE LEFT
+========================= */
+
+@keyframes fadeLeft{
+
+    from{
+        opacity:0;
+        transform:translateX(-60px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+/* =========================
+   FADE RIGHT
+========================= */
+
+@keyframes fadeRight{
+
+    from{
+        opacity:0;
+        transform:translateX(60px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+/* =========================
+   SCALE UP
+========================= */
+
+@keyframes scaleUp{
+
+    from{
+        opacity:0;
+        transform:scale(0.8);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+/* =========================
+   FLOAT EFFECT
+========================= */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+/* =========================
+   PULSE EFFECT
+========================= */
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.06);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/* =========================
+   ROTATE SLOW
+========================= */
+
+@keyframes rotateSlow{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+/* =========================
+   GLOW EFFECT
+========================= */
+
+@keyframes glow{
+
+    0%{
+        box-shadow:
+        0 0 10px rgba(0,102,204,0.15);
+    }
+
+    50%{
+        box-shadow:
+        0 0 35px rgba(0,102,204,0.35);
+    }
+
+    100%{
+        box-shadow:
+        0 0 10px rgba(0,102,204,0.15);
+    }
+
+}
+
+/* =========================
+   SLIDE IN
+========================= */
+
+@keyframes slideIn{
+
+    from{
+        opacity:0;
+        transform:translateX(-120px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+/* =========================
+   ZOOM IN
+========================= */
+
+@keyframes zoomIn{
+
+    from{
+        opacity:0;
+        transform:scale(0.6);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+/* =========================
+   REVEAL CLASS
+========================= */
+
+.reveal{
+    opacity:0;
+    transform:translateY(60px);
+    transition:1s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* =========================
+   HEADER ANIMATION
+========================= */
+
+header{
+    animation:fadeDown 1s ease;
+}
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content{
+    animation:fadeUp 1.2s ease;
+}
+
+/* =========================
+   LOGO FLOAT
+========================= */
+
+.logo,
+.landing-logo{
+    animation:float 3s infinite ease-in-out;
+}
+
+/* =========================
+   BUTTON EFFECTS
+========================= */
+
+.primary-btn,
+.secondary-btn,
+.landing-btn{
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.landing-btn:hover{
+
+    transform:
+    translateY(-6px)
+    scale(1.03);
+
+    box-shadow:
+    0 15px 35px rgba(0,102,204,0.25);
+
+}
+
+/* =========================
+   SERVICE BOX EFFECT
+========================= */
+
+.service-box{
+
+    animation:fadeUp 1s ease;
+
+}
+
+.service-box:hover{
+
+    transform:
+    translateY(-10px);
+
+    box-shadow:
+    0 20px 45px rgba(0,0,0,0.12);
+
+}
+
+/* =========================
+   BLOG CARD EFFECT
+========================= */
+
+.blog-card{
+
+    overflow:hidden;
+
+}
+
+.blog-card img{
+
+    transition:0.6s ease;
+
+}
+
+.blog-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.blog-card:hover{
+
+    transform:
+    translateY(-10px);
+
+    box-shadow:
+    0 20px 45px rgba(0,0,0,0.15);
+
+}
+
+/* =========================
+   COUNTER CARD EFFECT
+========================= */
+
+.counter-card{
+
+    animation:
+    glow 5s infinite ease-in-out;
+
+}
+
+.counter-card:hover{
+
+    transform:
+    translateY(-8px);
+
+}
+
+/* =========================
+   WHATSAPP BUTTON
+========================= */
+
+.whatsapp-btn{
+
+    animation:
+    pulse 2s infinite;
+
+}
+
+.whatsapp-btn:hover{
+
+    transform:scale(1.12);
+
+}
+
+/* =========================
+   FAQ EFFECT
+========================= */
+
+.faq{
+
+    transition:0.4s ease;
+
+}
+
+.faq:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* =========================
+   FAQ BUTTON
+========================= */
+
+.faq-question:hover{
+
+    letter-spacing:0.5px;
+
+}
+
+/* =========================
+   CONTACT BOX EFFECT
+========================= */
+
+.contact-box{
+
+    animation:fadeUp 1s ease;
+
+}
+
+.contact-box:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* =========================
+   MAP EFFECT
+========================= */
+
+.map-box iframe{
+
+    transition:0.5s ease;
+
+}
+
+.map-box iframe:hover{
+
+    transform:scale(1.02);
+
+}
+
+/* =========================
+   FOOTER LINKS
+========================= */
+
+.footer-grid a{
+
+    position:relative;
+
+}
+
+.footer-grid a:hover{
+
+    color:#0099ff;
+    padding-left:6px;
+
+}
+
+/* =========================
+   LANDING PAGE
+========================= */
+
+.landing-content{
+
+    animation:
+    scaleUp 1.2s ease;
+
+}
+
+/* =========================
+   THANK YOU CARD
+========================= */
+
+.thankyou-card{
+
+    animation:
+    zoomIn 0.9s ease;
+
+}
+
+/* =========================
+   FORM INPUT EFFECT
+========================= */
+
+input:focus,
+textarea:focus{
+
+    outline:none;
+
+    border-color:#0099ff;
+
+    box-shadow:
+    0 0 12px rgba(0,153,255,0.25);
+
+}
+
+/* =========================
+   NAV LINKS
+========================= */
+
+.nav-links a{
+
+    position:relative;
+
+}
+
+.nav-links a::after{
+
+    content:'';
+
+    position:absolute;
+
+    left:0;
+    bottom:-5px;
+
+    width:0%;
+    height:2px;
+
+    background:#0099ff;
+
+    transition:0.4s ease;
+
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#eef5ff;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:
+    linear-gradient(
+        #0066cc,
+        #0099ff
+    );
+
+    border-radius:20px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .service-box:hover,
+    .blog-card:hover,
+    .contact-box:hover,
+    .counter-card:hover{
+
+        transform:none;
+
+    }
+
+    .primary-btn:hover,
+    .secondary-btn:hover,
+    .landing-btn:hover{
+
+        transform:none;
+
+    }
+
+}
